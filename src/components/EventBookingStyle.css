@@ -1,0 +1,176 @@
+/* EventBookingStyle.css */
+
+/* Overall Container Styles */
+.container {
+  font-family: 'Dancing Script', cursive;
+  background-image: url('../assets/booking.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  padding: 20px; /* Add padding to the container */
+  box-sizing: border-box; 
+}
+
+/* Title Styles */
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background-color: rgba(236, 219, 219, 0.01);
+  color: black;
+  animation: moveText 3s ease infinite; /* Apply the animation */
+
+}
+
+/* Event Table Styles */
+.event-table {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 20px;
+  width:80%; /* Use full width within the container */
+  box-sizing: border-box; 
+  /* margin-top: 20px; */
+  /* Adjust the width as needed */
+}
+
+.event-table th,
+.event-table td {
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.event-table th {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.event-table td {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles */
+.bu {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bu:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #eee9e9;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border-radius: 3px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+/* Event Form Container Styles */
+.event-form-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 90%; /* Adjust the width as needed */
+}
+
+.event-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.event-form-container input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.event-form-container button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: auto;
+}
+
+.event-form-container button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+.bu.create-button {
+  background-color: green; /* Green color for the Create button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bu.create-button:hover {
+  background-color: #4caf50; /* Darker green on hover */
+}
+
+.bu.delete-button {
+  background-color: red; /* Red color for the Delete button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bu.delete-button:hover {
+  background-color: #f44336; /* Darker red on hover */
+}
+
+.bu.edit-button,
+.bu.update-button {
+  background-color: blue; /* Blue color for Edit and Update buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bu.edit-button:hover,
+.bu.update-button:hover {
+  background-color: #2196F3; /* Darker blue on hover */
+}
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+    color: #72cae0; /* Initial color */
+  }
+  50% {
+    transform: translateX(20px); /* Move the text to the right */
+    color: #b17dd4; /* Change color halfway */
+  }
+  100% {
+    transform: translateX(0);
+    color: #577ec8; /* Return to the initial color */
+  }
+}

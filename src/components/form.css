@@ -1,0 +1,82 @@
+/* Form Container Styles */
+.form-container {
+    background-image: url('../assets/booking.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    /* padding: 4rem 1rem; */
+    min-height: 100vh;
+    display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    /* Adjust the opacity as needed for transparency */
+  }
+  
+  /* Label Styles */
+  label {
+    color:rgb(14, 1, 1);
+    font-size: 1rem;
+    font-weight:1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form Element Styles */
+  .form {
+  
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto; /* Adjust margin for better spacing */
+  display: flex;
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center children horizontally */
+  text-align: left;
+  }
+  
+  .form input
+  { width: 50%;
+    text-align: left;
+    padding: 10px 18px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+
+  }
+  .form textarea {
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(15, 4, 4, 0.037);
+    border: none;
+    color: black;
+    border-radius: 5px;
+     /* Remove the default focus outline */
+  }
+  
+  /* Textarea Styles */
+  .form textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+  }
+  
+  /* Button Styles */
+  button.btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button.btn:hover {
+    background-color: #0056b3;
+  }
+  

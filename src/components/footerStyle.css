@@ -1,0 +1,63 @@
+
+.footer {
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    padding: 6rem 0;
+    color: white;
+    background-image: url('../assets/footer.jpg');
+    background-size: cover;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Add a hover effect to scale the background image slightly */
+  .footer:hover {
+    transform: scale(1.05);
+  }
+.footer-container{
+    max-width: 1140px;
+    margin:auto;
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 40px;
+   background-color: rgba(0, 0, 0, 0.65);
+   /* background: rgb(177,122,146);
+   background: radial-gradient(circle, rgba(177,122,146,1) 0%, rgba(173,183,224,1) 91%, rgba(169,184,226,1) 94%, rgba(148,187,233,1) 100%); */
+}
+.left{
+    height: 100%;
+    max-width:100%;
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.location{
+    display: flex;
+    margin-bottom: 0.8rem;  
+}
+.location p{
+    line-height: 30px;
+}
+.right{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.social{
+    margin-top: 1rem;
+}
+h4{
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+}
+p{
+    font-size:1.2rem
+}
+
+@media screen and (max-width:740px){
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}
+
